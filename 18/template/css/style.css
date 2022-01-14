@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+
+body{
+    font-family: Segoe Script; 
+    line-height: 1.6;
+}
+
+ul{
+    list-style: none;
+}
+/*主內容最外層*/
+.wrapper{
+    background-image: url(../images/未命名-2.jpg);
+    width: 1400px;
+    height: 787px;
+    margin: 50px auto;
+    position: relative;
+}
+
+/*主選單*/
+.nav{
+    float: right;
+    padding: 50px 130px 50px 0;
+}
+.nav li{
+    float: left;
+    margin-left: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/*主內容*/
+.container{
+	float: right;
+	width: 500px;
+	/*清除浮動*/
+    clear: both;
+}
+.container h1{
+    font-size: 72px;
+    font-weight: bold; 
+    color: 	#97CBFF;
+
+    animation-name: color;
+    animation-duration: 3s;
+    animation-delay: 0.001s;
+    animation-iteration-count: infinite; 
+
+}
+
+ /*關鍵影格*/
+    @keyframes color{
+        0%{color:#97CBFF;}
+        10%{color:#84C1FF;}
+        20%{color:#66B3FF;}
+        30%{color:#46A3FF;}
+        40%{color:#2894FF;}
+        50%{color:#0080FF;}
+        60%{color:#2894FF;}
+        70%{color:#46A3FF;}
+        80%{color:#66B3FF;}
+        90%{color:#84C1FF;}
+        100%{color:#97CBFF;}
+    }
+
+.container h2{
+    font-size: 42px;
+    color: #C4E1FF;
+}
+.container p{
+    margin-bottom: 20px;
+    color: #FFF;
+}
+.container a{
+    display: block;
+    background-color: #97CBFF;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    color: 	#FFF;
+    text-decoration: none;
+}
+
+.container a:hover{
+	background-color: #003D79;
+	transttion: .8s;
+}
+
+/*社群網站連結*/
+
+.social-media{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+
+}
+
+.social-media li{
+    float: left;
+    margin-left: 20px;
+
+}
